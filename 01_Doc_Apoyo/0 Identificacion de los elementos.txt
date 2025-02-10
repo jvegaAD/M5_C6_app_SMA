@@ -1,0 +1,3 @@
+Proyecto Django: Es reportesma, ya que contiene archivos como settings.py, urls.py, asgi.py y wsgi.py. Estos archivos son los de configuración del proyecto.
+
+Aplicación Django: Es formulario, que está dentro de la carpeta del proyecto app_SMA. Contiene archivos como apps.py, models.py, views.py, urls.py, serializers.py, etc. Estos archivos son específicos de una aplicación dentro del proyecto.

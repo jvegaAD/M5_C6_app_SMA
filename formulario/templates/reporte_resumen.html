@@ -1,0 +1,21 @@
+<h1>Resumen de Parámetros Examinados</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Parámetro</th>
+            <th>Unidad</th>
+            <th>Mín. de Valor Reportado</th>
+            <th>Máx. de Valor Reportado</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in resumen %}
+        <tr>
+            <td>{{ item.Parametro }}</td>
+            <td>{{ item.Unidad }}</td>
+            <td>{{ item.min_valor }}</td>
+            <td>{{ item.max_valor }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>

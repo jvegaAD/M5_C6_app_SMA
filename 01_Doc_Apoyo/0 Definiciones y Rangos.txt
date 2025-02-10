@@ -1,0 +1,14 @@
+Estudio de Emisiones de Compuestos Orgánicos Volátiles (COV):
+
+Unidad de medida: Microgramos por metro cúbico (µg/m³).
+Límite máximo permitido: Según el Decreto Supremo N°5/2023 del Ministerio del Medio Ambiente, el nivel de alerta para el benceno, un tipo de COV, se establece en 30 µg/m³ como promedio horario. Durante el año 2023, en cuatro estaciones de monitoreo en las comunas mencionadas, se registraron ocho ocasiones donde los niveles de benceno superaron este límite. 
+PORTAL.SMA.GOB.CL
+Uso Residencial de Calefactores:
+
+Unidad de medida: Material Particulado Fino (MP2.5), medido en microgramos por metro cúbico (µg/m³).
+Límite máximo permitido: El Plan de Prevención y Descontaminación Atmosférica (PPDA) para las comunas de Concón, Quintero y Puchuncaví establece medidas para reducir las emisiones de MP2.5 provenientes de fuentes residenciales. Entre ellas, se prohíbe el uso de calefactores a leña en ciertas zonas y se promueve el recambio por equipos menos contaminantes. 
+PPDA.MMA.GOB.CL
+Quemas Agrícolas:
+
+Unidad de medida: Material Particulado (MP), medido en microgramos por metro cúbico (µg/m³).
+Límite máximo permitido: El PPDA para estas comunas prohíbe la quema de rastrojos y cualquier tipo de vegetación en terrenos agrícolas, ganaderos o forestales durante ciertos periodos del año, con el objetivo de reducir las emisiones de material particulado.

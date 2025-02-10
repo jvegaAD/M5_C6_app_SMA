@@ -1,0 +1,52 @@
+<!-- Ajuste del 2025 02 02 -->
+<!-- <h1>Reportes Clasificados</h1>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Departamento</th>
+            <th>Comuna</th>
+            <th>Fecha</th>
+            <th>Tema</th>
+            <th>Clasificación</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for reporte in reportes %}
+        <tr>
+            <td>{{ reporte.id }}</td>
+            <td>{{ reporte.departamento }}</td>
+            <td>{{ reporte.comuna }}</td>
+            <td>{{ reporte.fecha }}</td>
+            <td>{{ reporte.tema }}</td>
+            <td>{{ reporte.clasificacion }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table> -->
+
+
+
+<!-- Ajuste del 2025 02 03 -->
+
+<<h1>Resumen de Parámetros Examinados</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Parámetro</th>
+            <th>Unidad</th>
+            <th>Mín. de Valor Reportado</th>
+            <th>Máx. de Valor Reportado</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in resumen %}
+        <tr>
+            <td>{{ item.Parametro }}</td>
+            <td>{{ item.Unidad }}</td>
+            <td>{{ item.min_valor }}</td>
+            <td>{{ item.max_valor }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>

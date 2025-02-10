@@ -1,0 +1,278 @@
+{
+   "swagger": "2.0",
+   "info": {
+      "title": "API de Reportes SMA",
+      "description": "Documentación interactiva de la API de reportes",
+      "contact": {
+         "email": "tu-email@dominio.com"
+      },
+      "version": "v1"
+   },
+   "host": "127.0.0.1:8000",
+   "schemes": "t",
+   "basePath": "/api",
+   "consumes": "s",
+   "produces": "p",
+   "securityDefinitions": {
+      "Basic": {
+         "type": "basic"
+      }
+   },
+   "security": {},
+   "paths": {
+      "/reportes/": {
+         "get": {
+            "operationId": "reportes_list",
+            "description": "",
+            "responses": {
+               "200": {
+                  "description": "",
+                  "schema": {
+                     "type": "array",
+                     "items": {
+                        "$ref": "#/definitions/Reporte"
+                     }
+                  }
+               }
+            },
+            "tags": "t"
+         },
+         "post": {
+            "operationId": "reportes_create",
+            "description": "",
+            "parameters": {
+               "name": "data",
+               "in": "body",
+               "required": true,
+               "schema": {
+                  "$ref": "#/definitions/Reporte"
+               }
+            },
+            "responses": {
+               "201": {
+                  "description": "",
+                  "schema": {
+                     "$ref": "#/definitions/Reporte"
+                  }
+               }
+            },
+            "tags": "r"
+         }
+      },
+      "/reportes/{id}/": {
+         "get": {
+            "operationId": "reportes_read",
+            "description": "",
+            "responses": {
+               "200": {
+                  "description": "",
+                  "schema": {
+                     "$ref": "#/definitions/Reporte"
+                  }
+               }
+            },
+            "tags": "p"
+         },
+         "put": {
+            "operationId": "reportes_update",
+            "description": "",
+            "parameters": {
+               "name": "data",
+               "in": "body",
+               "required": true,
+               "schema": {
+                  "$ref": "#/definitions/Reporte"
+               }
+            },
+            "responses": {
+               "200": {
+                  "description": "",
+                  "schema": {
+                     "$ref": "#/definitions/Reporte"
+                  }
+               }
+            },
+            "tags": "r"
+         },
+         "patch": {
+            "operationId": "reportes_partial_update",
+            "description": "",
+            "parameters": {
+               "name": "data",
+               "in": "body",
+               "required": true,
+               "schema": {
+                  "$ref": "#/definitions/Reporte"
+               }
+            },
+            "responses": {
+               "200": {
+                  "description": "",
+                  "schema": {
+                     "$ref": "#/definitions/Reporte"
+                  }
+               }
+            },
+            "tags": "e"
+         },
+         "delete": {
+            "operationId": "reportes_delete",
+            "description": "",
+            "responses": {
+               "204": {
+                  "description": ""
+               }
+            },
+            "tags": "s"
+         },
+         "parameters": {
+            "name": "id",
+            "in": "path",
+            "description": "A unique integer value identifying this reporte.",
+            "required": true,
+            "type": "integer"
+         }
+      }
+   },
+   "definitions": {
+      "Reporte": {
+         "required": "Parametro",
+         "type": "object",
+         "properties": {
+            "id": {
+               "title": "Id",
+               "type": "integer",
+               "readOnly": true
+            },
+            "PeriodoInforme": {
+               "title": "PeriodoInforme",
+               "type": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+               "format": "date"
+            },
+            "RUT": {
+               "title": "RUT",
+               "type": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+               "maxLength": 20,
+               "minLength": 1
+            },
+            "RazonSocial": {
+               "title": "RazonSocial",
+               "type": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+               "maxLength": 255,
+               "minLength": 1
+            },
+            "Planta": {
+               "title": "Planta",
+               "type": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+               "maxLength": 255,
+               "minLength": 1
+            },
+            "PuntoDeDescarga": {
+               "title": "PuntoDeDescarga",
+               "type": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+               "maxLength": 255,
+               "minLength": 1
+            },
+            "CuerpoReceptor": {
+               "title": "CuerpoReceptor",
+               "type": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+               "maxLength": 255,
+               "minLength": 1
+            },
+            "Norma": {
+               "title": "Norma",
+               "type": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+               "maxLength": 50,
+               "minLength": 1
+            },
+            "Muestra": {
+               "title": "Muestra",
+               "type": "integer",
+               "maximum": 2147483647,
+               "minimum": -2147483648
+            },
+            "Parametro": {
+               "title": "Parametro",
+               "type": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+               "maxLength": 255,
+               "minLength": 1
+            },
+            "Unidad": {
+               "title": "Unidad",
+               "type": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+               "maxLength": 50,
+               "minLength": 1
+            },
+            "ValorReportado": {
+               "title": "ValorReportado",
+               "type": "number"
+            },
+            "TipoDeControl": {
+               "title": "TipoDeControl",
+               "type": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+               "maxLength": 100,
+               "minLength": 1
+            },
+            "Laboratorio": {
+               "title": "Laboratorio",
+               "type": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+               "maxLength": 255,
+               "minLength": 1
+            },
+            "UnidadFiscalizable": {
+               "title": "UnidadFiscalizable",
+               "type": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+               "maxLength": 255,
+               "minLength": 1
+            },
+            "departamento": {
+               "title": "Departamento",
+               "type": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+               "maxLength": 255,
+               "minLength": 1
+            },
+            "ComunaId": {
+               "title": "ComunaId",
+               "type": "integer",
+               "maximum": 2147483647,
+               "minimum": -2147483648
+            },
+            "comuna": {
+               "title": "Comuna",
+               "type": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+               "maxLength": 255,
+               "minLength": 1
+            },
+            "NombreCategoria": {
+               "title": "NombreCategoria",
+               "type": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+               "maxLength": 255,
+               "minLength": 1
+            },
+            "NombreSubCategoria": {
+               "title": "NombreSubCategoria",
+               "type": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+               "maxLength": 255,
+               "minLength": 1
+            },
+            "Direccion": {
+               "title": "Direccion",
+               "type": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+               "maxLength": 255,
+               "minLength": 1
+            },
+            "NumeroRCA": {
+               "title": "NumeroRCA",
+               "type": "integer",
+               "maximum": 2147483647,
+               "minimum": -2147483648
+            },
+            "FechaRCA": {
+               "title": "FechaRCA",
+               "type": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+               "format": "date"
+            }
+         }
+      }
+   }
+}
