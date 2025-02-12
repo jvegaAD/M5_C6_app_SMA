@@ -1,0 +1,51 @@
+CREATE TABLE Reporte (
+    id SERIAL PRIMARY KEY,
+    PeriodoInforme DATE NOT NULL,
+    RUT VARCHAR(20) NOT NULL,
+    RazonSocial VARCHAR(255) NOT NULL,
+    Planta VARCHAR(255) NOT NULL,
+    PuntoDeDescarga VARCHAR(255) NOT NULL,
+    CuerpoReceptor VARCHAR(255) NOT NULL,
+    Norma VARCHAR(50) NOT NULL,
+    Muestra INTEGER NOT NULL,
+    Parametro VARCHAR(255) NOT NULL,
+    Unidad VARCHAR(50) NOT NULL,
+    ValorReportado NUMERIC NOT NULL,
+    TipoDeControl VARCHAR(100) NOT NULL,
+    Laboratorio VARCHAR(255) NOT NULL,
+    UnidadFiscalizable VARCHAR(255) NOT NULL,
+    Departamento VARCHAR(255) NOT NULL,
+    ComunaId INTEGER NOT NULL,
+    Comuna VARCHAR(255) NOT NULL,
+    NombreCategoria VARCHAR(255) NOT NULL,
+    NombreSubCategoria VARCHAR(255) NOT NULL,
+    Direccion VARCHAR(255) NOT NULL,
+    NumeroRCA INTEGER NOT NULL,
+    FechaRCA DATE NOT NULL
+);
+
+
+
+INSERT INTO public.formulario_reporte(
+	id, "PeriodoInforme", "RUT", "RazonSocial", "Planta", "PuntoDeDescarga", 
+	"CuerpoReceptor", "Norma", "Muestra", "Parametro", "Unidad", 
+	"ValorReportado", "TipoDeControl", "Laboratorio", "UnidadFiscalizable", 
+	departamento, "ComunaId", comuna, "NombreCategoria", "NombreSubCategoria", 
+	"Direccion", "NumeroRCA", "FechaRCA")
+VALUES 
+	(1, '2024-01-01', '61704000-K', 'CORP NACIONAL DEL COBRE DE CHILE', 
+	 'REFINERIA VENTANAS', 'C.DVENTANAS', 'BAHÍA QUINTERO', 'DS 90', 
+	 162763, 'Aceites y Grasas', 'mg/L', 140.0, 'Autocontrol', 
+	 '5M S.A., Laboratorio de Analisis', 'FUNDICION Y REFINERIA VENTANAS', 
+	 'Región de Valparaíso', 1080, 'Puchuncaví', 'Instalación fabril', 
+	 'Fundición', 'F-30-E 58270, Puchuncaví', 161, '2013-08-13');
+
+
+--SELECT
+
+SELECT * FROM FORMULARIO_REPORTE;
+
+
+
+
+

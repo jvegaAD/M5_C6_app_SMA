@@ -241,10 +241,10 @@ WSGI_APPLICATION = 'reportesma.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'sma_10',
-        'USER': 'postgres',
-        'PASSWORD': 'clave5544',
-        'HOST': '127.0.0.1',
+        'NAME': 'sma',
+        'USER': 'root',
+        'PASSWORD': '123456',
+        'HOST': 'localhost',
         'PORT': '5432',
     }
 }
